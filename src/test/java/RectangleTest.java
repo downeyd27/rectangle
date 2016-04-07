@@ -20,4 +20,10 @@ public class RectangleTest {
     Rectangle testRectangle = new Rectangle(2, 2);
     assertEquals(2, testRectangle.getWidth());
   }
+
+  @Test
+  public void isSqaure_whenNotASqure_False() {
+    Rectangle testRectangle = new Rectangle(2,4);
+    assertEquals(false, testRectangle.isSquare());
+  }
 }
