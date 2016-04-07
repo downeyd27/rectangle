@@ -8,4 +8,16 @@ public class RectangleTest {
     Rectangle testRectangle = new Rectangle(2, 2);
     assertEquals(true, testRectangle instanceof Rectangle);
   }
-}  
+
+  @Test
+  public void newRectangle_setsLength() {
+    Rectangle testRectangle = new Rectangle(2, 2);
+    assertEquals(2, testRectangle.getLength());
+  }
+
+  @Test
+  public void newRectangle_setsWidth() {
+    Rectangle testRectangle = new Rectangle(2, 2);
+    assertEquals(2, testRectangle.getWidth());
+  }
+}
